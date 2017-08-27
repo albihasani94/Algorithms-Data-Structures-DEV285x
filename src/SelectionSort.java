@@ -1,5 +1,8 @@
 import java.util.Arrays;
 
+/**
+ * @author ahasani
+ */
 class SelectionSort {
 
 
@@ -16,7 +19,7 @@ class SelectionSort {
     private static void applySelectionSort(int[] list) {
         int swap;
         for (int i = 0; i < list.length - 1; i++) {
-            for (int j = i+1; j < list.length; j++) {
+            for (int j = i + 1; j < list.length; j++) {
                 if (list[j] < list[i]) {
                     swap = list[i];
                     list[i] = list[j];
