@@ -21,7 +21,7 @@ public class BubbleSort {
         int n = list.length;
         int j = 0;
         int iteration = 0;
-        boolean swapped = true;
+        boolean swapped;
         do {
             swapped = false;
             for (int i = 1; i < n - j; i++) {
@@ -35,6 +35,6 @@ public class BubbleSort {
                 System.out.println("Iteration " + iteration + ": " + Arrays.toString(list));
             }
 
-        } while (swapped == true);
+        } while (swapped);
     }
 }
