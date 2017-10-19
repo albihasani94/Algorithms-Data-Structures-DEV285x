@@ -22,15 +22,18 @@ class SelectionSort {
         int swap;
         int iteration = 0;
         for (int i = 0; i < list.length - 1; i++) {
+            iteration++;
             for (int j = i + 1; j < list.length; j++) {
-                iteration++;
+
                 if (list[j] < list[i]) {
                     swap = list[i];
                     list[i] = list[j];
                     list[j] = swap;
                 }
-                System.out.println("Iteration " + iteration + ": " + Arrays.toString(list));
+
             }
+            String output = String.format("Iteration %s: %s", iteration, Arrays.toString(list));
+            System.out.println(output);
         }
     }
 
